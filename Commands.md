@@ -22,6 +22,8 @@ Git Commands
 
 | Command | Description |
 | ------- | ----------- |
+| `git remote show origin` | show information remote, urls, branches etc. |
+| `git remote update` | fetch any new branch that exist in the remote but not tracked in local |
 | `git branch` | List branches (the asterisk denotes the current branch) |
 | `git branch -a` | List all branches (local and remote) |
 | `git branch [branch name]` | Create a new branch |
