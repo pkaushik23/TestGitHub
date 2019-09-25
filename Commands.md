@@ -41,6 +41,21 @@ Git Commands
 | `git stash pop` | get stashed entries |
 | `git stash clear` | Remove all stashed entries |
 
+**Merging via command line**
+
+Step 1: From your project repository, bring in the changes and test.
+
+    git fetch origin
+    git checkout -b dialogComponent origin/dialogComponent
+    git merge master
+
+Step 2: Merge the changes and update on GitHub.
+
+    git checkout master
+    git merge --no-ff dialogComponent
+    git push origin master
+
+
 ### Sharing & Updating Projects
 
 | Command | Description |
